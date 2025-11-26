@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoneyMap</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="app">
+        <h1>MoneyMap</h1>
+        <p class="tagline">Track your expenses clearly and efficiently.</p>
+
+        <!-- Add Expense Form -->
+        <div class="expense-form">
+            <input type="text" id="title" placeholder="Expense Title" />
+            <input type="number" id="amount" placeholder="Amount ($)" />
+            <select id="category">
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Bills">Bills</option>
+                <option value="Other">Other</option>
+            </select>
+            <button id="addBtn">Add Expense</button>
+        </div>
+
+        <!-- Expense List -->
+        <h2>Expense List</h2>
+        <ul id="expenseList"></ul>
+
+        <!-- Total -->
+        <div class="total-box">
+            <h3>Total Spent: $<span id="totalAmount">0</span></h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
